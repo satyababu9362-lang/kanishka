@@ -77,12 +77,17 @@
       color: var(--primary-color);
     }
 
+    .hero-text p {
+      color: #ccc; /* light grey */
+      font-size: 1.2rem;
+    }
+
     .btn {
       display: inline-block;
       padding: 0.7rem 1.5rem;
       background: var(--primary-color);
       border-radius: 30px;
-      color: var(--dark-text-color);
+      color: white; /* ✅ white text */
       font-weight: bold;
       text-decoration: none;
       transition: 0.5s;
@@ -123,49 +128,6 @@
       100% { box-shadow: 0 0 10px var(--primary-color); }
     }
 
-    .hero-image {
-      position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .hero-image::before {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 300px;
-      height: 300px;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(56,189,248,0.3) 0%, transparent 70%);
-      transform: translate(-50%, -50%);
-      animation: pulse 4s infinite ease-in-out;
-    }
-
-    @keyframes pulse {
-      0% { transform: translate(-50%, -50%) scale(1); opacity: 0.6; }
-      50% { transform: translate(-50%, -50%) scale(1.2); opacity: 0.3; }
-      100% { transform: translate(-50%, -50%) scale(1); opacity: 0.6; }
-    }
-
-    .hero img {
-      width: 250px;
-      height: 250px;
-      border-radius: 60%;
-      border: 5px solid var(--primary-color);
-      animation: glow 3s infinite ease-in-out, float 6s ease-in-out infinite;
-      object-fit: cover;
-      position: relative;
-      z-index: 1;
-    }
-
-    @keyframes float {
-      0% { transform: translateY(0); }
-      50% { transform: translateY(-15px); }
-      100% { transform: translateY(0); }
-    }
-
     .section-title {
       text-align: center;
       font-size: 2rem;
@@ -181,6 +143,7 @@
       font-size: 1.1rem;
       line-height: 1.6;
       text-align: left;
+      color: #000; /* ✅ black text */
     }
 
     /* 🌟 Skills */
@@ -301,8 +264,8 @@
     <!-- 🌟 Hero Section -->
     <section class="hero" id="home">
       <div class="hero-text" data-aos="fade-up">
-        <h1>Hello, It's me <span style="color:var(--text-color);">KANISHKA</span></h1>
-        <p>A passionate Web Designer 🚀</p>
+        <h1>Hello, It's me <span style="color:darkgrey;">KANISHKA</span></h1>
+        <p style="color:darkgrey;">A passionate Web Designer 🚀</p>
         <a href="#about" class="btn">More About Me</a>
 
         <!-- ✅ Social Icons -->
@@ -313,10 +276,6 @@
           <a href="mailto:satyababu9362@gmail.com" title="Gmail"><i class="fas fa-envelope"></i></a>
         </div>
       </div>
-
-      <div class="hero-image" data-aos="fade-up">
-        <img src=""C:\Users\HP\OneDrive\Desktop\img.jpg"" alt="A profile picture of Kanishka">
-      </div>
     </section>
   </main>
 
@@ -324,30 +283,23 @@
   <section id="about">
     <h2 class="section-title" data-aos="fade-right">About Me</h2>
     <div class="about-container" data-aos="fade-up">
-
-  <p>
-    Hi, I’m <b>Kanishka</b> 👋 — a passionate and creative Web Designer from India.  
-    I love turning ideas into beautiful and functional websites. My journey in web development started with curiosity, 
-    and over time it became my passion 🚀.
-  </p>
-
-  <p>
-    I specialize in creating responsive, user-friendly, and modern websites that not only look good 
-    but also provide smooth experiences. Whether it’s designing elegant landing pages, crafting personal portfolios, 
-    or developing feature-rich projects, I always aim for quality and creativity.
-  </p>
-
-  <p>
-    Beyond coding, I enjoy exploring new design trends, experimenting with UI/UX ideas, 
-    and learning the latest web technologies to improve my skills 🌟.
-  </p>
-
-  <p>
-    My goal is to grow as a full-stack developer and build impactful digital solutions that make a difference.  
-    I believe in continuous learning, hard work, and having fun while creating amazing things. 💡
-  </p>
-</section>
-s
+      <p>
+        Hi, I’m <b>Kanishka</b> 👋 — a passionate and creative Web Designer from India.  
+        I love turning ideas into beautiful and functional websites. My journey in web development started with curiosity, 
+        and over time it became my passion 🚀.
+      </p>
+      <p>
+        I specialize in creating responsive, user-friendly, and modern websites that not only look good 
+        but also provide smooth experiences. Whether it’s designing elegant landing pages, crafting personal portfolios, 
+        or developing feature-rich projects, I always aim for quality and creativity.
+      </p>
+      <p>
+        Beyond coding, I enjoy exploring new design trends, experimenting with UI/UX ideas, 
+        and learning the latest web technologies to improve my skills 🌟.
+      </p>
+      <p>
+        My goal is to grow as a full-stack developer and build impactful digital solutions that make a difference.  
+        I believe in continuous learning, hard work, and having fun while creating amazing things. 💡
       </p>
     </div>
   </section>
